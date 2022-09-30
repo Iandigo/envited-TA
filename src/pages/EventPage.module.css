@@ -1,0 +1,181 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f6f2ff;
+}
+
+.container {
+  width: 75%;
+  display: block;
+  justify-content: space-between;
+}
+
+.photocontainer {
+  float: right;
+}
+
+.photocontainer img {
+  width: 500px;
+  height: 500px;
+}
+
+.datacontainer {
+  float: left;
+}
+
+.datacontainer h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #240d57;
+  letter-spacing: 0.05em;
+
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.datacontainer > span {
+  color: #2c1a58;
+  font-weight: 700;
+}
+
+.row {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.row .icon {
+  font-size: 1.8rem;
+  color: #502da9;
+}
+
+.row .text {
+  margin-left: 0.5rem;
+}
+
+.row .text span:nth-child(1) {
+  color: #502da9;
+  font-weight: 700;
+}
+
+.row .edit {
+  margin-left: 150px;
+  color: #c4c4c4;
+}
+
+@media (max-width: 960px) {
+  .section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  .photocontainer {
+    float: unset;
+
+    margin-left: 15%;
+  }
+
+  .photocontainer img {
+    width: calc(15vw + 300px);
+    height: calc(15vw + 300px);
+  }
+
+  .datacontainer {
+    float: unset;
+    margin-left: 15%;
+  }
+
+  .datacontainer h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .row {
+    margin-top: 1.5rem;
+  }
+
+  .row .icon {
+    font-size: 1.8rem;
+  }
+
+  .row .text {
+    margin-left: 0.5rem;
+  }
+
+  .row .text span:nth-child(1) {
+    font-weight: 700;
+  }
+
+  .row .edit {
+    margin-left: 43%;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    display: flex;
+    justify-content: unset;
+    padding: 0 0 10vh 0;
+  }
+
+  .container {
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .photocontainer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .datacontainer {
+    margin-left: 15px;
+  }
+
+  .photocontainer img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .datacontainer h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: unset;
+  }
+
+  .row {
+    margin-top: 1.5rem;
+  }
+
+  .row .icon {
+    font-size: 1.7rem;
+  }
+
+  .row .text {
+    margin-left: 00.5rem;
+  }
+
+  .row .text span:nth-child(1) {
+    font-weight: 600;
+  }
+
+  .row .edit {
+    margin-left: 40%;
+  }
+}
